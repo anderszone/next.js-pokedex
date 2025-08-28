@@ -1,7 +1,10 @@
 import Image from "next/image";
 import SearchIcon from "@/public/Search.svg";
 
+// Sökfältskomponenten
 export default function Search() {
+  
+  // Visar sökfältet
   return (
     <section className="content-grid justify-center padding-block-medium">
         <form className="relative" action="/search" method="get">

@@ -4,10 +4,13 @@ import Logo from "@/public/Logo.png";
 import FB from "@/public/Facebook.svg";
 import IG from "@/public/Instagram.svg";
 
+// Footer komponent
 export default function Footer() {
+  
+  // Visar footer
   return (
     <footer className="content-grid justify-center gap-medium padding-block-large bg-dark">
-        <Link href="/" className="flex align-center gap-small color-light"><Image src={Logo} alt="Pokédex logo" width={40} height={40}></Image>Pokédex</Link>
+        <Link href="/" className="flex align-center gap-small logo color-light"><Image src={Logo} alt="Pokédex logo" width={48} height={48}></Image>Pokédex</Link>
         <p className="color-gray">Explore the world of Pokémon</p>
         <ul className="flex align-center gap-large">
           <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><Image src={FB} alt="Facebook logo" width={40} height={40}></Image></a></li>

@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   description: "Explore the world of Pokémon",
 };
 
+// Definierar layouten för hela webbplatsen, varje sida använder samma header och footer
 export default function RootLayout({
   children,
 }: Readonly<{

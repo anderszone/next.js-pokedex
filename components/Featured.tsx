@@ -11,14 +11,15 @@ interface Pokemon {
 
 interface FeaturedProps {
   pokemons: Pokemon[];
+  title?: string;
 }
 
 // Featured komponenten
-export default function Featured({ pokemons }: FeaturedProps) {
+export default function Featured({ pokemons, title = "Featured Pokémons" }: FeaturedProps) {
   // Visa en sektion med utvalda pokémons
   return (
     <section className="content-grid gap-large bg-gradient padding-block-large">
-        <h2 className="text-center">Featured Pokémons</h2>
+        <h2 className="text-center">{title}</h2>
         <ul className="flex space-between">
           {/* Loopar igenom utvalda pokemons och visar dessa */}
           {pokemons.map(p => (

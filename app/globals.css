@@ -26,6 +26,11 @@ h2 {
   font-size: 2.25rem;
 }
 
+h3 {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
 .logo {
   font-family: var(--font-jersey), Arial, Helvetica, sans-serif;
   font-size: 1.875rem;
@@ -95,6 +100,7 @@ h2 {
   grid-template-columns: inherit;
 }
 
+/* Anders utility classes Start */
 .flex {
   display: flex;
 }
@@ -107,12 +113,20 @@ h2 {
   align-items: center;
 }
 
+.stretch {
+  align-self: stretch;
+}
+
 .justify-center {
   justify-items: center;
 }
 
 .text-center {
   text-align: center;
+}
+
+.gap-tiny {
+  gap: 0.5rem;
 }
 
 .gap-small {
@@ -151,6 +165,36 @@ h2 {
   color: #EAEAEA;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 700;  
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.margin-bottom-small {
+  margin-bottom: 0.4rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 0.8rem;
+}
+/* Anders utility classes End */
+
+/* General styling */
 .form-input {
   padding: 0.5em 24em 0.5em 1em;
   border-radius: 0.3em;
@@ -163,20 +207,45 @@ h2 {
   background-color: #637CCE;
   top: 9px;
   right: 9px;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
+  cursor: pointer;
 }
 
 .pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-width: 200px;
-  padding: 0.6rem 1rem;
+  padding: 2rem 1rem 0.6rem;
   border-radius: 0.5rem;
   border: 4px solid #637CCE;
   background-color: #F1FDFF;
+}
+
+.pokemon-image {
+  border-radius: 50%;
+  border: 3px solid lightskyblue;
+  background-color: #fff;
+}
+
+.pokemon-id {
+  display: grid;
+  place-items: center;
+  padding: 0.1rem 0.3rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: blue;
+  background-color: lightblue;
+}
+
+.pokemon-tag {
+  display: grid;
+  place-items: center;
+  padding: 0.25rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  line-height: 1.2;
+  color: #fff;
+  background-color: blue;
 }
